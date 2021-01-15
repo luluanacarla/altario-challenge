@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="top-navigation">
+    <button type="button" mat-button (click)="drawer.toggle()" class="menu-button">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">reorder</mat-icon>
+    </button>
+    <img src="https://s3-eu-west-1.amazonaws.com/altario-wordpressmedia/wp-content/uploads/2020/04/09130005/altar__full-logo-light.svg">
+    <span class="title">&& Luana</span>
+  </div>
+  <mat-drawer-container autosize>
+    <mat-drawer #drawer mode="side">
+      <ul>
+        <li><a routerLink="/generator" routerLinkActive="active">Generator</a></li>
+        <li><a routerLink="/payments" routerLinkActive="active">Payments</a></li>
+      </ul>
+    </mat-drawer>
+    <div class="sub-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+</div>

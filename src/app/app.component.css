@@ -1,0 +1,76 @@
+  .container {
+      height: 100%;
+      background-image: linear-gradient(90deg,
+      rgba(16,7,39, 1) 0%,
+      rgba(16,7,39, 0.99) 25%,
+      rgba(16,7,39, 0.95) 50%,
+      rgba(16,7,39, 0.7) 75%,
+      rgba(16,7,39, 0.4) 100%
+      );
+  }
+
+.sub-container {
+  margin: 34px;
+}
+
+.top-navigation {
+  padding: 10px;
+}
+
+  img {
+    width: 150px;
+  }
+
+  .mat-drawer-container {
+    height: 100%;
+    background-image:linear-gradient(90deg,
+    rgba(16,7,39, 1) 0%,
+    rgba(16,7,39, 0.99) 25%,
+    rgba(16,7,39, 0.95) 50%,
+    rgba(16,7,39, 0.7) 75%,
+    rgba(16,7,39, 0.4) 100%
+    ) ;
+  }
+
+  mat-drawer {
+    padding: 20px;
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu-item {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: white;
+    margin-left: 20px;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 20px
+  }
+
+  ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold ;
+  }
+
+  ul li a:visited {
+    color: #3F3852;
+  }
