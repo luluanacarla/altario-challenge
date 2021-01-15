@@ -1,0 +1,55 @@
+<div class="top">
+    <div class="input-char">
+        <label>Character</label>
+        <input matInput type="text" [(ngModel)]="char" placeholder="Character">
+    </div>
+    <div class="clock">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">alarm</mat-icon>
+        {{ time | date: 'hh:mm:ss a' }}
+    </div>
+    <div>
+        <button mat-raised-button color="secondary" *ngIf="isRefreshing" (click)="stopRefresh()">STOP REFRESH</button>
+        <button mat-raised-button color="secondary" *ngIf="!isRefreshing"(click)="startRefresh()">START REFRESH</button>
+        <button style="margin-left: 20px;" mat-raised-button color="primary" [disabled]="buttonDisabled" (click)="onGenerateClick()">GENERATE 2D GRID</button>
+    </div>
+</div>
+  <table>
+    <tr>
+      <td></td>
+      <th scope="col">0</th>
+      <th scope="col">1</th>
+      <th scope="col">2</th>
+      <th scope="col">3</th>
+      <th scope="col">4</th>
+      <th scope="col">5</th>
+      <th scope="col">6</th>
+      <th scope="col">7</th>
+      <th scope="col">8</th>
+      <th scope="col">9</th>
+    </tr>
+    <tr *ngFor="let col of arrayChar">
+        <td>{{col[0]}}</td>
+        <td>{{col[1]}}</td>
+        <td>{{col[2]}}</td>
+        <td>{{col[3]}}</td>
+        <td>{{col[4]}}</td>
+        <td>{{col[5]}}</td>
+        <td>{{col[6]}}</td>
+        <td>{{col[7]}}</td>
+        <td>{{col[8]}}</td>
+        <td>{{col[9]}}</td>
+        <td>{{col[10]}}</td>
+      </tr>
+  </table>
+
+  <div class="bottom">
+    <div class="live">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">info</mat-icon> LIVE
+    </div>
+    <div class="code">
+        <span>
+            YOUR CODE: {{code}}
+        </span>
+    </div>
+  </div>
+  
