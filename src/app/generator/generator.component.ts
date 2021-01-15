@@ -19,7 +19,7 @@ export class GeneratorComponent implements OnInit {
   seconds = this.time.getSeconds()
   isRefreshing = true;
   subscription: Subscription;
-  everytwoSeconds: Observable<number> = timer(0, 4000);
+  everytwoSeconds: Observable<number> = timer(0, 2000);
   constructor(private codeService: CodeService) { }
 
   ngOnInit(): void {
