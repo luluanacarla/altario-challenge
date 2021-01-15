@@ -32,7 +32,11 @@ table, th, td {
   }
 
   .bottom .live mat-icon {
+    vertical-align: middle;
     color: green;
+    height: 23px;
+    width: 18px;
+    font-size: 18px;
   }
 
   .code {
