@@ -1,0 +1,44 @@
+<div class="bottom">
+  <div class="live">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">info</mat-icon> LIVE
+  </div>
+  <div class="code">
+      <span>
+          YOUR CODE NOW: {{code}}
+      </span>
+  </div>
+</div>
+
+<div class="form">
+  <div class="input">
+    <label>Payment</label>
+    <input matInput type="text" [(ngModel)]="payment" placeholder="Payment">
+  </div>
+  <div class="input">
+    <label>Amount</label>
+    <input matInput type="text" [(ngModel)]="amount" placeholder="Amount">
+  </div>
+  <div class="button">
+    <button style="margin-top: 20px;" mat-raised-button color="primary" (click)="AddPayment()">Add</button>
+  </div>
+</div>
+
+<div class="empty"  *ngIf="paymentList.length === 0">
+  <img style="width: 300px;" src="https://cdn.iconscout.com/icon/free/png-512/empty-folder-2702275-2244989.png">
+  <p>Ooops...there are no payments.</p>
+  <small>Fill the form above, and tap Add to add one :) </small>
+</div>
+<table *ngIf="paymentList.length > 0">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Code</th>
+      <th scope="col">Grid</th>
+    </tr>
+    <tr *ngFor="let payment of paymentList">
+      <td>{{payment.name}}</td>
+      <td>{{payment.amount}}</td>
+      <td>{{payment.code}}</td>
+      <td>64</td>
+    </tr>
+  </table>

@@ -1,0 +1,72 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  table {
+    border-spacing: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .bottom {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .bottom .live mat-icon {
+    vertical-align: middle;
+    color: green;
+    height: 23px;
+    width: 18px;
+    font-size: 18px;
+  }
+
+  .code {
+    margin-top: 20px;
+  }
+  .code span {
+    border: 1px solid white;
+    padding: 20px;
+  }
+
+  .empty {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+  }
+
+  .input{
+    display: grid;
+    margin-right: 20px;
+  }
+
+  .input input {
+    padding: 10px;
+  }
+
+  .input label {
+    color: white;
+  }
+
+  .form {
+    display: flex;
+    margin-top: 30px;
+  }

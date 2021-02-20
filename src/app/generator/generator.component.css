@@ -1,0 +1,81 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  table {
+    border-spacing: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  tr td:first-child {
+    font-weight: bold;
+  }
+
+  .input-char {
+    display: grid;
+  }
+
+  .input-char, .clock {
+      flex: 1;
+  }
+
+  .input-char input {
+    padding: 10px;
+    width: 68px;
+  }
+
+  .input-char label {
+    color: white;
+  }
+
+  .top {
+      display: flex;
+  }
+
+  .clock {
+      color: white;
+      font-size: 2rem;
+  }
+
+  .mat-icon {
+    vertical-align: middle;
+    height: 23px;
+    width: 18px;
+    font-size: 18px;
+  }
+
+  .bottom {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .bottom .live mat-icon {
+    color: green;
+  }
+
+  .code {
+    margin-top: 20px;
+  }
+  .code span {
+    border: 1px solid white;
+    padding: 20px;
+  }
